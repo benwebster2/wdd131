@@ -1,0 +1,46 @@
+#content {
+    border: 1px solid #0d2e7d;
+    width: 25%;
+    height: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-style: Serif;
+}
+p {
+    text-align: center;
+    color: blue;
+}
+
+h2 {
+    font-style: serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+
+}
+
+ul {
+    list-style-type: decimal;
+    margin-bottom: 1rem;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    margin: 20 auto;
+
+}
