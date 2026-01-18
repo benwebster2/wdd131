@@ -44,3 +44,14 @@ img {
     margin: 20 auto;
 
 }
+
+body {
+    background-color: white;
+    color: black;
+    transition: background 0.3s, color 0.3s; 
+}
+
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
