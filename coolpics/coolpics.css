@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ddd; 
+    text-align: center;
+}
+h1::after {
+    content: "📷";
+}
+header, footer {
+    background-color: #2b78e4; 
+    color: white;
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.nav-links { display: none; }
+
+@media (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    
+    .menu-button { display: none; }
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    .nav-links li { margin: 0 10px; }
+    .nav-links a { color: white; text-decoration: none; font-size: 0.9rem; }
+}
