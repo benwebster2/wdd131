@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card - Snortleblat</title>
+
+    <meta property="og:title" content="Snortleblat the Swamp Beast Diplomat">
+    <meta property="og:description" content="Check out my custom RPG character card!">
+    <meta property="og:image" content="character-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="cc.css">
+</head>
+<body>
+
+    <div class="card">
+        <img id="char-image" src="snortleblat.webp" alt="Character Image">
+        <h1 id="char-name">Name</h1>
+        <p><strong>Class:</strong> <span id="char-class">Class</span></p>
+        <p><strong>Level:</strong> <span id="char-level">0</span></p>
+        <p><strong>Health:</strong> <span id="char-health">100</span></p>
+
+        <div class="buttons">
+            <button onclick="character.attacked()">Attacked</button>
+            <button onclick="character.levelUp()">Level Up</button>
+        </div>
+    </div>
+
+    <script src="cc.js"></script>
+</body>
+</html>
