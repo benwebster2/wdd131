@@ -1,0 +1,135 @@
+/* Typography */
+body { 
+  font-family: sans-serif; 
+  max-width: 1000px; /* Optional: keeps the page from getting too wide */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 { 
+  font-family: 'Amatic SC', cursive; 
+  margin: 0; 
+}
+
+/* --- Header & Logo --- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px; /* Specific size works better than % for logos */
+  height: auto;
+}
+
+/* --- Search Bar --- */
+.search-bar {
+  display: flex;
+  width: 100%;
+  border: 1px solid #333;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border: none;
+  padding: 8px;
+  outline: none;
+}
+
+.search-bar button {
+  background: white;
+  border: none;
+  border-left: 1px solid #333;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* --- Recipe Card --- */
+.recipe-card {
+  border: 1px solid #333;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Stacks on mobile */
+  gap: 15px;
+}
+
+.recipe-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tag {
+  border: 1px solid #333;
+  padding: 2px 8px;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #3498db; /* Match the blue in the image */
+  font-size: 2rem;
+}
+
+/* --- Footer & Social --- */
+footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social img {
+  width: 24px;
+}
+
+/* --- Responsive Adjustments (Larger Devices) --- */
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: flex-start; /* Logo stays left */
+  }
+
+  /* This makes the search bar span the full width below the logo in the mock */
+  .search-bar {
+    margin-top: 10px;
+  }
+
+  .recipe-card {
+    flex-direction: row; /* Side-by-side */
+    align-items: flex-start;
+  }
+
+  .recipe-image {
+    flex: 1;
+  }
+
+  .recipe-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between; /* Links left, Social right */
+    align-items: center;
+  }
+}
