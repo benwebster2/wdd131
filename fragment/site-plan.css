@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    color: #0D070A;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
