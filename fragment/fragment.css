@@ -55,18 +55,17 @@ p {
 }
 
 #develop_images {
-    display: flex;         /* Enables Flexbox */
-    justify-content: center; /* Centers the images horizontally */
-    gap: 30px;            /* Adds space between the two images */
+    display: flex;         
+    justify-content: center; 
+    gap: 30px;            
     margin-bottom: 20px;
 }
 
-/* 2. Target the images inside that section to make them uniform */
 #develop_images img {
-    width: 300px;         /* Set your desired width */
-    height: 400px;        /* Set your desired height */
-    object-fit: fill;    /* This is key: it crops the photo to fit without squishing it */
-    border-radius: 2px solid #396E94;   /* Optional: adds nice rounded corners */
+    width: 300px;         
+    height: 400px;        
+    object-fit: fill;    
+    border-radius: 2px solid #396E94;   
 }
 
 .card-wrapper {
